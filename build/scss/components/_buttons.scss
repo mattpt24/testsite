@@ -1,0 +1,61 @@
+.btn {
+    transition: all .3s ease;
+    padding: .5rem 2rem;
+    outline: none;
+    border-radius: 5px;
+    border: solid 1px #222;
+
+
+
+    &.btn--dark {
+        background: #222;
+        color: white;
+
+        &:hover {
+            transition: all .3s ease;
+            background: $clr-secondary;
+            color: #222;
+            border: solid 1px #222;
+        }
+    }
+
+
+    &.btn--color {
+        background: rgba(250, 128, 114, 0.241);
+        color: $clr-secondary;
+        border-color: $clr-secondary;
+
+        &:hover {
+            transition: all .3s ease;
+            opacity: .5;
+        }
+    }
+
+
+
+    &.btn--white {
+        background: white;
+        color: #222;
+        border-color: white;
+
+        &:hover {
+            transition: all .3s ease;
+            opacity: .5;
+        }
+    }
+
+
+    &.btn--transparent {
+        background: none;
+       color: white;
+       border-color: white;
+
+        &:hover {
+            transition: all .3s ease;
+            background: white;
+            color: #222;
+        }
+    }
+
+
+}

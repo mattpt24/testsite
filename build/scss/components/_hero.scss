@@ -1,0 +1,97 @@
+.hero__wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("/build/images/hero-img.png");
+    background: {
+        size: cover;
+        position: center center;
+        blend-mode: multiply;
+    }
+
+
+    .hero__content__container {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 3rem;
+        border-radius: 10px;
+    }
+
+    .hero__title {
+        font-size: $fs-xl;
+        color: white;
+        opacity: 0;
+        animation: entranceAnimation 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+
+    .hero__subtitle {
+        font-size: $fs-md;
+        color: rgb(159, 159, 159);
+        margin: .8rem 0 2.2rem 0;
+        width: 40vw;
+        font-weight: $fw-regular;
+        opacity: 0;
+        animation: entranceAnimation 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+    }
+
+
+    .hero__btn__container {
+        opacity: 0;
+        animation: entranceAnimation 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+
+        a {
+            margin-right: 1rem;
+        }
+    }
+
+
+    .hero__ticks {
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+        opacity: 0;
+        animation: entranceAnimation 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+
+        .hero__tick {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+
+
+            .tick__icon {
+                color: $clr-secondary;
+                font-size: $fs-md;
+            }
+
+            .tick__text {
+                font-size: $fs-sml;
+                color: $clr-secondary;
+                font-weight: $fw-light;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+
+
+
+@keyframes entranceAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

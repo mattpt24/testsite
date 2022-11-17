@@ -1,0 +1,25 @@
+@import "../scss/base/variables.scss";
+@import "../scss/components/navbar";
+@import "../scss/components/buttons";
+@import "../scss/components/hero";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $ff-primary;
+}
+
+body {
+    background: #01151E;
+}
+
+
+h1, h2 , h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
