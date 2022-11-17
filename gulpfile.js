@@ -27,7 +27,7 @@ function buildCSS() {
 }
 
 function javascript() {
-  return src('./build/js/**/*.js')
+  return src('./build/js/*.js')
     .pipe(babel({
       presets: ['@babel/env'],
     }))
