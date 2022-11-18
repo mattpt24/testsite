@@ -1,3 +1,15 @@
 "use strict";
 
-console.log("This hopefully has run through babel and has been concatted with other JS files");
+var dealLink = Array.from(document.querySelectorAll(".deal__link__container"));
+var dealBanner = Array.from(document.querySelectorAll(".banner__container"));
+var _loop = function _loop(i) {
+  dealLink[i].addEventListener("mouseover", function () {
+    dealBanner[i].classList.add("active--banner");
+  });
+  dealLink[i].addEventListener("mouseout", function () {
+    dealBanner[i].classList.remove("active--banner");
+  });
+};
+for (var i = 0; i <= dealLink.length; i++) {
+  _loop(i);
+}

@@ -1,1 +1,15 @@
-console.log("This hopefully has run through babel and has been concatted with other JS files");
+const dealLink = Array.from(document.querySelectorAll(".deal__link__container"));
+const dealBanner = Array.from(document.querySelectorAll(".banner__container"));
+
+
+for(let i = 0; i <= dealLink.length; i++) {
+
+dealLink[i].addEventListener("mouseover", () => {
+    dealBanner[i].classList.add("active--banner");
+})
+
+dealLink[i].addEventListener("mouseout", () => {
+    dealBanner[i].classList.remove("active--banner");
+})
+
+}
